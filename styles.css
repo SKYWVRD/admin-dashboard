@@ -18,10 +18,17 @@ body {
     
 }
 
+.header {
+    display: grid;
+    grid-template: auto 1fr / 2fr 1fr;
+    margin: 10px;
+}
+
 .sidebar-title{
     font-size: 30px;
     margin: 10px;
 }
+
 
 .admin > button, .navigation > button {
 
