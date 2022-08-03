@@ -1,3 +1,33 @@
-.test {
-    color: blueviolet;
+.main-container{
+    display:grid;
+    height: 100vh;
+    grid-template-columns: 20vw 80vw;
 }
+
+.sidebar{
+    grid-row: 1 / span 2;
+    background-color: skyblue;
+    
+}
+
+.admin > button, .navigation > button {
+    border: transparent;
+    background-color: transparent;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 2px;
+    text-align: left;
+    
+}
+
+button:hover {
+    background-color: white;
+}
+
+
+.navigation, .admin{
+    display: grid;
+}
+
+
+
