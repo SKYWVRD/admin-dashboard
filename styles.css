@@ -1,32 +1,52 @@
+body {
+    margin: 0;
+}
+
 .main-container{
     display:grid;
     height: 100vh;
-    grid-template-columns: 20vw 80vw;
+    grid-template: auto 4fr/ 1fr 4fr;
 }
 
 .sidebar{
     grid-row: 1 / span 2;
     background-color: skyblue;
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    gap: 20px;
+    justify-content: left;
     
 }
 
+.sidebar-title{
+    font-size: 30px;
+    margin: 10px;
+}
+
 .admin > button, .navigation > button {
+
+    font-size: 15px;
     border: transparent;
     background-color: transparent;
     margin-left: 10px;
     margin-right: 10px;
     border-radius: 2px;
     text-align: left;
+    margin: 10px;
     
 }
 
-button:hover {
+.sidebar > * > button:hover {
     background-color: white;
 }
 
-
-.navigation, .admin{
+.navigation {
     display: grid;
+}
+
+.admin {
+    display: grid;
+    align-content: start;
 }
 
 
