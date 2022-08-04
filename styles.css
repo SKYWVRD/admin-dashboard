@@ -30,8 +30,9 @@ body {
 
 .profile-header {
     display: grid;
-    grid-template: 1fr 2fr/ 1fr 2fr;
+    grid-template: 1fr 2fr/ 0.5fr 2fr;
     align-items: center;
+    margin: 10px;
 }
 
 #header-picture {
@@ -57,6 +58,12 @@ body {
     margin: 10px;
 }
 
+.search-bar {
+    display: grid;
+    grid-template-columns: auto 2fr;
+    align-items: center;
+    gap: 10px;
+}
 
 .admin > button, .navigation > button {
 
