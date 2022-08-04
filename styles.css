@@ -24,6 +24,34 @@ body {
     margin: 10px;
 }
 
+.profile-admin {
+    display: flex;
+    justify-content: center;
+}
+
+.profile-header {
+    display: grid;
+    grid-template: 1fr 2fr/ 1fr 2fr;
+    align-items: center;
+}
+
+#header-picture {
+    grid-row: 1 / span 2;
+    align-self: center;
+    justify-self: center;
+    min-width: 75px;
+    width: 8vw;
+    
+}
+
+#profile-name {
+    font-size: 25px;
+}
+
+#greeting {
+    font-size: 12.5px;
+}
+
 .sidebar-title{
     font-size: 30px;
     margin: 10px;
@@ -40,11 +68,12 @@ body {
     border-radius: 2px;
     text-align: left;
     margin: 10px;
+    transition: 0.5s;
     
 }
 
 .sidebar > * > button:hover {
-    background-color: white;
+    background: white;
 }
 
 .navigation {
@@ -54,6 +83,25 @@ body {
 .admin {
     display: grid;
     align-content: start;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.action-buttons > button {
+    align-self: center;
+    background-color: skyblue;
+    border-radius: 20px;
+    height: 30px;
+    width: 60px;
+    border-style: none;
+}
+
+.main-content {
+    background-color: #cbd5e1;
+    border-top: inset 2px;
 }
 
 
